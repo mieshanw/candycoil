@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Contact Page</title>
+<link rel="stylesheet" href="css/960.css">
+<link rel="stylesheet" href="css/test.css"> 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script  type="text/javascript">
+function validateForm() {
+    var f = document.forms["contact"]["fname"].value;
+    var l = document.forms["contact"]["lname"].value;
+    var e = document.forms["contact"]["email"].value;
+    var n = document.forms["contact"]["number"].value;
+    var m = document.forms["contact"]["message"].value;
+    if (f == "") {
+        alert("First Name must be filled out");
+        document.getElementById('fname').style.borderColor = "hotpink";
+        return false;
+    }
+    
+    if (l == "") {
+        alert("Last Name must be filled out");
+        document.getElementById('lname').style.borderColor = "hotpink";
+        return false;
+}
+if (e == "") {
+        alert("Email must be filled out");
+        document.getElementById('email').style.borderColor = "hotpink";
+        return false;
+    }
+    if (n == "") {
+        alert("Phone Number must be filled out");
+        document.getElementById('number').style.borderColor = "hotpink";
+       return false;
+    }
+    if (m == "") {
+        alert("You must leave a message.");
+        document.getElementById('message').style.borderColor = "hotpink";
+         return false;
+    }
+    return true
+   
+}
+
+function store() {
+	var input= document.getElementById("fname");
+    localStorage.setItem("name", input.value);
+}
+
+
+        </script>
+   
+   <script>
+   $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+   </script>
+</head>
+<body>
+
+<div class="container_12">
+<div class="grid_12">
+<img src= header.png alt="candy coil header">
+<br></div>
+<!--Navigation -->
+<div class="grid_12">
+<nav><a href="index.html">Home</a> - <a href="dryhair.html"> Dry Hair</a> - <a href="about.html"> About</a> - <a href="faq.html"> FAQ</a> - <a href="link.html">links</a>- <a href="policy.html">Policy</a> - <a href="contact.html">Contact</a> - <a href="game.html"> Game</a> </nav>
+</div>
+<div class="grid_12"><h2>Contact us</h2></div>
+<div class="grid_4"><h3>Monthly Newsletter</h3><br>
+By signing up for our Monthly Newsletter you are agreeing to receive a once a month email which will keep you up to date with everything Candycoil! Included but not liimited to: special offers, hair care tips, new posts! 
+<br>
+<h3>Creating Account</h3>
+<br>
+A new account will allow you to login in order to see past history and stay in contact with your coil friends. This also allows you a simple way to create new orders, view past orders, and track open orders!
+<br></div>
+<div class="grid_8"> 
+<form action="contact.html" method="post" id="contactform" name="contact" onsubmit="return validateForm()">
+<fieldset>
+<legend>Information</legend>
+First Name:<br>
+<input type="text" name="fname" value="" id="fname"><br>
+Last Name:<br>
+<input type="text" name="lname" value="" id="lname"><br>
+</fieldset>
+<fieldset>
+<legend>Contact</legend>
+Email:<br>
+<input type="email" name="email" value="" id="email"><br>
+Cell<input type="radio" name=phone> Home<input type="radio" name=phone> Work<input type="radio" name=phone><br>
+Phone Number:<br>
+<input type="tel" name="number" value="" id="number"><br></fieldset>
+<fieldset><legend>
+Messsage<br></legend>
+<input type="text" name="message" value="" id="message"></fieldset>
+<br><fieldset><legend>Agreement</legend>
+<br>
+<input type="checkbox" name="agree"> I agree to have Candycoil contact me using my phone number or email address (checking this box acts as your signature) - 
+<!--Date checker with JQuery functionality, calender pops up when user clicks on the date input field allowing them to select the current date -->
+Date: <input type="text" id="datepicker"><br>
+<input type="checkbox"> Sign me up for Candycoil newsletter<br>
+<br>
+
+Password:<br><input type="password">
+<br>
+<input type="checkbox"> Create an account
+<br>
+<br></fieldset>
+<br>
+<input type="reset">
+<input type="submit" value="submit" onclick="store()">
+</form>
+</div>
+
+</div>
+<div class="grid_6">Candycoil</div>
+<div class="grid_6">Your favorite hair spot on the web.</div>
+</body>
+</html>
+
+
+

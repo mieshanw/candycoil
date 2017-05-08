@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: 
+Allow: //ait616.com/mwilli91/project/
+Allow: //ait616.com/mwilli91/project/index.html
+Allow: //ait616.com/mwilli91/project/contact.html
+Allow: //http://ait616.com/mwilli91/project/dryhair.html
+Allow: //ait616.com/mwilli91/project/about.html
+Allow: //ait616.com/mwilli91/project/faq.html
+Allow: //ait616.com/mwilli91/project/link.html
+Allow: //ait616.com/mwilli91/project/game.html
+Sitemap: http://ait616.com/mwilli91/project/sitemap.xml
+

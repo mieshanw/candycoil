@@ -1,0 +1,52 @@
+h1 {text-align:center;
+color:#71E5DE;
+}
+
+h2{text-align:center;
+color:#DAF7A6;
+}
+
+h3{text-align:center;}
+
+h4{text-align:center;}
+
+a:link, a:visited { color:#70E6C2;
+text-decoration: none;
+ }
+
+a:hover { color:#C270E6;
+}
+nav{text-align:center;
+font-size: x-large;}
+
+body {background-color:#C39BD3;}
+table {
+
+	width: 100%;
+}
+
+th{
+	height: 50px;
+	
+}
+
+tbody{
+	text-align:center;
+}
+
+footer{
+	text-align:center;
+}
+
+p{
+	text-align:center;
+	font-family: Arial, Verdana, Sans-serif;
+}
+
+main{
+	text-align:left;
+	font-family: Arial, Verdana, Sans-serif;
+}
+
+img{display: block;
+	margin: auto;}
