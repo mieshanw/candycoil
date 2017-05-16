@@ -55,3 +55,25 @@ img{display: block;
 text-decoration: none;
 font-size: x-large;
 }
+.button{
+	border: 2px solid #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+
+#button1 {
+    background-color: #AB3456; 
+}
+
+#button2 {
+    background-color: #93D9F4; 
+    }
+
+#button3 {
+    background-color: #E6FF1E; 
+}

@@ -1,5 +1,5 @@
+function Choices(userChoice){
 
-var userChoice = prompt("You noticed your hair is dryer than usual. Which oil do you choose to add to your hair: coconut, argan or olive?");
 var computerChoice = Math.random();
 
 if (computerChoice < 0.34) {
@@ -11,37 +11,42 @@ else if(computerChoice <= 0.67) {
 else {
     computerChoice = "olive";
 }
+choiceOutput=compare(userChoice, computerChoice);
 
+document.getElementById("gameoutput").innerHTML = 
+    "<p>Your choice: " + userChoice + ". Computer choice: " 
+    + computerChoice + "</p> <p>" + choiceOutput + "</p>";
+}
 var compare = function(choice1,choice2){
 
 if (choice1 === choice2){
-confirm ("The result is a tie! You and the computer both chose stellar oils!");
+return "The result is a tie! You and the computer both chose stellar oils!";
 }
 else if (choice1 === "coconut"){
 if (choice2 === "olive"){
 
-confirm ("You win. Coconut oil is absorbed by the hair shaft easier than olive oil!");
+return "You win. Coconut oil is absorbed by the hair shaft easier than olive oil!";
 }
 else{
-confirm ("The computer wins it chose argan which was a better option!");
+return "The computer wins it chose argan which was a better option!";
 }
 }
 
 else if (choice1 === "argan"){
 if (choice2 === "Coconut"){
-confirm ("You win! Argan oil is more moisturizing than coconut oil");
+return "You win! Argan oil is more moisturizing than coconut oil";
 }
 else{
-confirm ("The computer wins it chose olive which was a better option!");
+return "The computer wins it chose olive which was a better option!";
 }
 }
 
 else if (choice1 === "olive"){
 if (choice2 === "argan"){
-confirm ("You win! Olive oil protects against damage and is super moisturizing");
+return "You win! Olive oil protects against damage and is super moisturizing";
 }
 else{
-confirm ("The computer wins it chose coconut which was a better option!");
+return "The computer wins it chose coconut which was a better option!";
 }
 }
 

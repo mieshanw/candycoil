@@ -18,11 +18,20 @@
 <div class="grid_12">
 <nav><a href="index.html">Home</a> - <a href="tipsandtricks.html"> Tips and Tricks </a> - <a href="about.html"> About</a> - <a href="faq.html"> FAQ</a> - <a href="link.html">links</a>- <a href="policy.html">Policy</a> - <a href="contact.html">Contact</a> - <a href="game.html"> Game</a> </nav>
 </div>
-<div class="grid_12"><h2>Let's Play a Coil Game !<br> Coconut, Argan, Olive... GO! </h2>
+<div class="grid_12">
+<h2>Let's Play a Coil Game !</h2>
+<h3>Choose your choice of oil to combat dryness by clicking a button below</h3>
+<h2> Coconut, Argan, Olive... GO! </h2>
 <br></div>
-<div style="text-align:center;"
-<form id=game><input type="button" value="Play Again" onClick="window.location.reload()"></form><br>
-</div>
+<div style="text-align:center;">
 
+<button class="button" id="button1" onClick="Choices('coconut')">Coconut</button>
+<button class="button" id="button2" onClick="Choices('argan')">Argan</button>
+<button class="button" id="button3" onClick="Choices('olive')">Olive</button>
+<br>
+<button class="button" onClick="window.location.reload()">Play again</button>
+<br>
+</div>
+<div id="gameoutput"></div>
 </body>
 </html>
