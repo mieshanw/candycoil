@@ -1,0 +1,23 @@
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+a{
+	font-size: 30px
+}
+* {
+        display:block;
+}
+
+img {width:70%;
+
+	}
+
+	head{
+		display:none;
+	}
+#p1{
+	display:none;
+}
+}

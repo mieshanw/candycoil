@@ -1,0 +1,14 @@
+@media print{
+	
+body {
+    filter: grayscale(100%);
+    filter:Gray();
+}
+
+img{
+	display:none;
+}
+
+a {
+	display:none;
+}
