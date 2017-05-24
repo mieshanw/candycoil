@@ -8,6 +8,8 @@
  <meta name="google-site-verification" content="OMLX3T2KjYhh21rv4xodQLHaUW6Asi7qc-B43WvoCKY" />
 <title>Home</title>
 <link rel="stylesheet" href="css/test.css" type="text/css" /> 
+
+<!--Internal CSS as requirement for project-->
 <style type="text/css" >
 
 
@@ -37,20 +39,28 @@ height:50px;
 
 </style>
 </head>
+
 <body>
 <div id="result"></div>
 <script>
+
+//Custom greeting from local storage, feedback from form on contact page
 // Check browser support 
 if (typeof(Storage) != "undefined") {
 	document.getElementById("result").innerHTML = "Hello " + localStorage.getItem("name");
 }
 	else {document.getElementById("result") = "Sorry, your browser does not support web storage...";}
 </script>
+
+<!--Pinterest-->
 <script
     type="text/javascript"
     async defer
     src="//assets.pinterest.com/js/pinit.js"
 ></script>
+
+
+<!--Facebook-->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -59,15 +69,20 @@ if (typeof(Storage) != "undefined") {
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--main logo / candycoil header !-->
 <div id="logo">
 <img src= header.png alt="candy coil header">
 </div>
 <br>
+
 <!--Navigation -->
 <div id="nav">
 <nav><a href="index.html">Home</a> - <a href="tipsandtricks.html"> Tips and Tricks </a> - <a href="about.html"> About</a> - <a href="faq.html"> FAQ</a> - <a href="link.html">links</a>- <a href="policy.html">Policy</a> - <a href="contact.html">Contact</a> - <a href="game.html"> Game</a> </nav>
-
 </div>
+
+<!--main content div-->
 <div>
 <h1>Welcome to Candy Coil!</h1><br>
 <img src="border3.png" alt="footer border"><br>
@@ -84,6 +99,7 @@ Feel free to look around, take note of the status of this site:
 <br> </p>
 </div>
 
+<!--footer!-->
 <div id="footer">
 <div class="fb-like" data-href="https://www.facebook.com/towsonuniversity/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
 <a href="https://twitter.com/TowsonU" class="twitter-follow-button" data-show-count="false">Follow @TowsonU</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -77,3 +77,13 @@ font-size: x-large;
 #button3 {
     background-color: #E6FF1E; 
 }
+
+@media screen
+{
+    #printMessage{display:none;}
+}
+
+@media print
+{
+    #printMessage{}
+}
