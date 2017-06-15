@@ -45,4 +45,5 @@ All pages validate with zero errors
 <li>
 Three	templates (unsemantic,	960gs, and	your	own	framework) submitted	with	the	 project	that	are	clearly	legible,	easily understandable	and	utilized	for	the	website
 </li>
+*Update: August 2017.
 
